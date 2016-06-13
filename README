@@ -1,0 +1,19 @@
+The homepage gives a basic explanation of the Supreme Court's role, as well as
+two key issues the Court is likely to deal with in the near future. A link at
+the end of each item takes you to the source material. Each photo is linked
+to its original source, too.
+
+The court page shows all the justices, with a button to show you more. Clicking
+the button will take you to a page with all the judges of that gender. This
+gender-directed URL is handled through a view definition, along with a count of
+how many justices are of that gender.
+
+On the gender pages, there is a brief display of the remaining database fields,
+including a link to a video of that justice in action.
+
+The about-me page is kinda basic. But it uses Bootstrap elements, pulls in photos
+from the web and links out to other material.
+
+P.S. I need to learn how to control the jumbotron! It's a little much as it now
+appears on the pages. But since my css won't override the bootstrap css,
+I left this for a future lesson.
