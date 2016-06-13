@@ -2,12 +2,11 @@
 
 {% block content %}
     <h1>Meet the justices</h1>
-
-    {% for justice in justices %}
     <div class="row">
+    {% for justice in justices %}
       <div class="col-sm-6 col-md-4">
         <div class="thumbnail">
-          <img src="{{ justice.photo }}" alt="...">
+          <img src="{{ justice.photo }}" alt="Photo of Justice {{ justice.name }}">
           <div class="caption">
             <h3>{{ justice.name }}</h3>
             <p>Law degree from: {{ justice.law_school }}</p>
@@ -16,6 +15,7 @@
           </div>
         </div>
       </div>
-    </div>
     {% endfor %}
+    </div>
+
 {% endblock %}
