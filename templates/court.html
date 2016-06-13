@@ -11,7 +11,11 @@
             <h3>{{ justice.name }}</h3>
             <p>Law degree from: {{ justice.law_school }}</p>
             <p>Appointed by: President {{ justice.appointed_by }}</p>
-            <p><a href="#" class="btn btn-primary" role="button">More on this justice</a> </p>
+            {% if justice.gender == "F" %}
+                <p><a href="{% url 'women' %}" class="btn btn-primary" role="button">More on this justice</a> </p>
+            {% elif justice.gender == "M" %}
+                <p><a href="{% url 'men' %}" class="btn btn-primary" role="button">More on this justice</a> </p>
+            {% endif %}
           </div>
         </div>
       </div>

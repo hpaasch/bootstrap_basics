@@ -1,0 +1,16 @@
+{% extends "base.html" %}
+
+{% block content %}
+    <h1>There are {{ total }} women on the court</h1>
+    {% for justice in justices %}
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                <h3 class="panel-title">Justice {{ justice.name }}</h3>
+            </div>
+            <div class="panel-body">
+                <p>See a video <a href="{{ justice.video }}"> here.</a> Justice {{ justice.name }} was
+                    born {{ justice.birth_date }}. Her hobbies: {{ justice.hobby }}.</p>
+            </div>
+        </div>
+    {% endfor %}
+{% endblock %}

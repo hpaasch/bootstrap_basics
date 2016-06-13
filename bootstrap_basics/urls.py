@@ -22,6 +22,8 @@ urlpatterns = [
     url(r'^admin/', admin.site.urls),
     url(r'^$', views.homepage_view, name='homepage'),
     url(r'^the_court/$', views.court_view, name='court'),
-    url(r'^about_the_fanatic/$', views.about_view, name='about')
+    url(r'^about_the_fanatic/$', views.about_view, name='about'),
+    url(r'^women/$', views.women_view, name='women'),
+    url(r'^men/$', views.men_view, name='men'),
 
 ]

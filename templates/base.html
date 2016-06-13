@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <title>U.S. Supreme Court</title>
+    <link rel="stylesheet" href="main.css" />
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
 </head>
 <body>
@@ -10,10 +11,12 @@
 
         <div class="jumbotron" >
             <h1>Supreme Court</h1>
-                <h1>of the United States</h1>
+            <h1>of the United States</h1>
             <h3>"Equal justice under law"</h3>
                 <p><a class="btn btn-primary btn-sm" href="{% url 'homepage' %}" role="button">Home</a>
                 <a class="btn btn-primary btn-sm" href="{% url 'court' %}" role="button">The Court</a>
+                <a class="btn btn-primary btn-sm" href="{% url 'women' %}" role="button">Female justices</a>
+                <a class="btn btn-primary btn-sm" href="{% url 'men' %}" role="button">Male justices</a>
                 <a class="btn btn-primary btn-sm" href="{% url 'about' %}" role="button">About the Fanatic who made this</a>
 
                 </p>
